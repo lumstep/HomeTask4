@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="width" format="dimension" />
+    <attr name="length" format="dimension" />
+    <attr name="color" format="color" />
+
+    <declare-styleable name="HoursArrow">
+        <attr name="width" />
+        <attr name="length" />
+        <attr name="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MinutesArrow">
+        <attr name="width" />
+        <attr name="length" />
+        <attr name="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SecondsArrow">
+        <attr name="width" />
+        <attr name="length" />
+        <attr name="color" />
+    </declare-styleable>
+</resources>
