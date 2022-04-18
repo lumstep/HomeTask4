@@ -6,13 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.lumstep.clock.Clock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lumstep.clock.HoursArrow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:color="@color/black"
+        app:length="90dp"
+        app:strokeWidth="5dp"/>
+
+    <com.lumstep.clock.MinutesArrow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:color="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:length="70dp"
+        app:strokeWidth="4dp" />
+
+    <com.lumstep.clock.SecondsArrow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:color="#2C72FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:length="50dp"
+        app:strokeWidth="3dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
